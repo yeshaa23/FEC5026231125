@@ -1,0 +1,71 @@
+body {
+    font-family: "Inter" ;
+    background-color: lightblue;
+    color: rgb(19, 19, 228);
+    margin-left: 200px;
+    margin-right: 200px;
+    }
+p {
+    text-decoration: solid;
+}
+a:link{
+    color : rgb(43, 4, 79);
+    text-decoration: none;
+    }
+a:hover{
+    color : rgb(255, 221, 25);
+    text-decoration: solid;
+    font-weight: bold;
+    }
+a:visited{
+    color : rgb(43, 4, 79);
+    text-decoration: none;
+    }
+
+.kalimatpembuka {
+    font-size: x-large;
+    border: rgb(198, 102, 33);
+    border-radius: 50px;
+}
+
+h2::before {
+    content:"📰";
+    font-size: 1.2em;
+    color:rgb(9, 24, 57)
+}
+
+h2::after {
+    content:"🔍";
+    font-size: 1.2em;
+    color: rgb(9, 24, 57)
+}
+
+.kalimatpembuka::first-letter{
+    font-size: 2em;
+    font-weight: bold;
+    color:rgb(9, 24, 57)
+}
+
+.kalimatpembuka::selection{
+    background-color: burlywood;
+    color: black
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.grid-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.grid-item:nth-child(odd) {
+    font-weight: bold;
+    background-color: #e9ecef;
+}
